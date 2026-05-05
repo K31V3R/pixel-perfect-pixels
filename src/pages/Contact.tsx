@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="mt-16 grid gap-8 lg:grid-cols-5">
           <div className="lg:col-span-2 space-y-4">
             {[
-              { icon: Mail, label: "Email", value: "contact@xm3global.com" },
+              { icon: Mail, label: "Email", value: "info@xm3global.com" },
               { icon: MapPin, label: "Location", value: "Wyoming, United States" },
               { icon: Building2, label: "Company ID", value: "2026-001878798" },
             ].map((c) => (
