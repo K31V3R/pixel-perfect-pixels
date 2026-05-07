@@ -32,9 +32,9 @@ export const Navbar = () => {
     >
       <nav className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-bold tracking-wide">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-gradient-primary text-primary-foreground text-sm shadow-glow">
-            X
-          </span>
+          <div className="flex items-center">
+            <img src="/favicon.ico" alt="Logo" className="h-10 w-auto object-contain" />
+          </div>
           <span className="text-sm sm:text-base">XM3 GLOBAL LLC</span>
         </Link>
 
