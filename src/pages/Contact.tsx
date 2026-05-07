@@ -5,15 +5,30 @@ import { toast } from "sonner";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
+
+  const formData = new FormData(e.currentTarget);
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+      });
+    
       toast.success("Message sent. We'll be in touch soon.");
       (e.target as HTMLFormElement).reset();
-    }, 800);
-  };
+      } catch (error) {
+        toast.error("Something went wrong. Please try again.");
+       } finally {
+      setLoading(true); // Lo mantenemos en true si quieres que el botón se quede deshabilitado o cámbialo a false
+      setLoading(false);
+      }
+      };
+
+      };
 
   return (
     <section className="relative overflow-hidden">
