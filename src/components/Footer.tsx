@@ -27,7 +27,7 @@ export const Footer = () => (
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li>ID: 2026-001878798</li>
           <li>Wyoming, USA</li>
-          <li><a href="mailto:contact@xm3global.com" className="hover:text-foreground transition-colors">contact@xm3global.com</a></li>
+          <li><a href="mailto:info@xm3global.com" className="hover:text-foreground transition-colors">info@xm3global.com</a></li>
         </ul>
       </div>
     </div>
