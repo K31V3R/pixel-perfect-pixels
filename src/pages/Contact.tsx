@@ -60,7 +60,7 @@ const Contact = () => {
             <div className="grid gap-5 sm:grid-cols-2">
               <Field label="Name" name="name" placeholder="NAME" required />
               <Field label="Email" name="email" type="email" placeholder="email@example.com" required />
-              <Field label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
+              <Field label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" required />
             </div>
             <Field label="Company" name="company" placeholder="Company" />
             <div className="space-y-2">
