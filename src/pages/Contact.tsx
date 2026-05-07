@@ -28,7 +28,6 @@ const Contact = () => {
       }
       };
 
-      };
 
   return (
     <section className="relative overflow-hidden">
