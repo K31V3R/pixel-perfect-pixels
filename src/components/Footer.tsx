@@ -4,12 +4,11 @@ export const Footer = () => (
   <footer className="border-t border-border/60 bg-background/60">
     <div className="container py-12 grid gap-10 md:grid-cols-3">
       <div>
-        <div className="flex items-center gap-2 font-bold">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-gradient-primary text-primary-foreground text-sm">
-            X
-          </span>
-          XM3 GLOBAL LLC
+        <div className="flex items-center gap-3 font-bold">
+          <img src="/favicon.ico" alt="Logo" className="h-8 w-auto object-contain" />
+          <span>XM3 GLOBAL LLC</span>
         </div>
+
         <p className="mt-4 text-sm text-muted-foreground max-w-xs">
           Wyoming-based distribution company bridging premium manufacturers and global markets.
         </p>
@@ -28,7 +27,7 @@ export const Footer = () => (
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li>ID: 2026-001878798</li>
           <li>Wyoming, USA</li>
-          <li>contact@xm3global.com</li>
+          <li><a href="mailto:contact@xm3global.com" className="hover:text-foreground transition-colors">contact@xm3global.com</a></li>
         </ul>
       </div>
     </div>
