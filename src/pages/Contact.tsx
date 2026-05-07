@@ -58,11 +58,11 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
 
             <div className="grid gap-5 sm:grid-cols-2">
-              <Field label="Name" name="name" required />
-              <Field label="Email" name="email" type="email" required />
+              <Field label="Name" name="name" placeholder="Name" required />
+              <Field label="Email" name="email" type="email" placeholder="email@example.com" required />
               <Field label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
             </div>
-            <Field label="Company" name="company" />
+            <Field label="Company" name="company" placeholder="Company" />
             <div className="space-y-2">
               <label className="text-sm text-muted-foreground">Message</label>
               <textarea
