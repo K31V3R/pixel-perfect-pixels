@@ -31,12 +31,13 @@ export const Navbar = () => {
       )}
     >
       <nav className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-bold tracking-wide">
+        <Link to="/" className="flex items-center gap-3 font-bold tracking-wide">
           <div className="flex items-center">
             <img src="/favicon.ico" alt="Logo" className="h-10 w-auto object-contain" />
           </div>
-          <span className="text-sm sm:text-base">XM3 GLOBAL LLC</span>
-        </Link>
+      <span className="text-sm sm:text-base">XM3 GLOBAL LLC</span>
+      </Link>
+
 
         <ul className="hidden md:flex items-center gap-8 ml-auto mr-8">
           {links.map((l) => (
