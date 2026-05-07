@@ -38,7 +38,7 @@ export const Navbar = () => {
           <span className="text-sm sm:text-base">XM3 GLOBAL LLC</span>
         </Link>
 
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-8 ml-auto">
           {links.map((l) => (
             <li key={l.to}>
               <NavLink
