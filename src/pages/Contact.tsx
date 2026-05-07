@@ -47,13 +47,20 @@ const Contact = () => {
             ))}
           </div>
 
-          <form
-            onSubmit={onSubmit}
-            className="lg:col-span-3 rounded-2xl border border-border/60 bg-card p-8 space-y-5"
+          <form 
+              name="contact" 
+              method="POST" 
+              data-netlify="true"
+              onSubmit={onSubmit}
+              className="lg:col-span-3 rounded-2xl border border-border/60 bg-card p-8 space-y-5"
           >
+          {/* Esta línea es vital para que Netlify lo reconozca */}
+          <input type="hidden" name="form-name" value="contact" />
+
             <div className="grid gap-5 sm:grid-cols-2">
               <Field label="Name" name="name" required />
               <Field label="Email" name="email" type="email" required />
+              <Field label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
             </div>
             <Field label="Company" name="company" />
             <div className="space-y-2">
