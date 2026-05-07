@@ -58,7 +58,7 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
 
             <div className="grid gap-5 sm:grid-cols-2">
-              <Field label="Name" name="name" placeholder="Name" required />
+              <Field label="Name" name="name" placeholder="NAME" required />
               <Field label="Email" name="email" type="email" placeholder="email@example.com" required />
               <Field label="Phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" />
             </div>
@@ -67,6 +67,7 @@ const Contact = () => {
               <label className="text-sm text-muted-foreground">Message</label>
               <textarea
                 name="message"
+                placeholder="I'd like information about..."
                 required
                 rows={5}
                 className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none transition focus:border-primary"
