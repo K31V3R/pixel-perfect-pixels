@@ -33,8 +33,9 @@ const About = () => (
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold">Who We Are</h2>
         <p className="mt-4 text-muted-foreground">
-          XM3 GLOBAL LLC is a Wyoming-based enterprise specializing in the strategic acquisition and
-          international distribution of premium goods.
+          XM3 Global LLC is a strategic procurement and distribution enterprise. We specialize in the high-efficiency sourcing 
+          of premium consumer electronics, certified automotive components, and general consumer merchandise, leveraging global 
+          logistics to serve international markets.
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -58,10 +59,11 @@ const About = () => (
       <div className="rounded-3xl border border-border/60 bg-card p-10 md:p-14">
         <h2 className="text-3xl md:text-4xl font-semibold">Our Legacy of Excellence</h2>
         <p className="mt-6 text-muted-foreground max-w-3xl">
-          Founded on over 20 years of expertise in market analysis and trade, we have built a robust
-          operation centered on the acquisition and sale of specialized inventory. We curate a diverse
-          portfolio ranging from advanced electronics to automotive parts, maintaining full control over our
-          sourcing to guarantee product authenticity and competitive market value.
+          Founded on over 20 years of expertise in engineering, logistics, and international trade, 
+          XM3 Global LLC was established to bridge the gap between world-class manufacturing and regional 
+          markets. We curate a diverse portfolio ranging from advanced electronics to specialized automotive 
+          parts and essential consumer goods, maintaining full control over our sourcing to guarantee product 
+          authenticity and superior quality.
         </p>
       </div>
     </section>
